@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Awards</h4>
+            <h4>Travels</h4>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
           <div class="col-md-12">
             <div class="card collapsed-card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">Add New Award</h3>
+                <h3 class="card-title">Add New Travels</h3>
                 <div class="card-tools">
                   <button type="button" class="btn btn-sm btn-primary" data-card-widget="collapse">Add New</button>
                 </div>
@@ -46,27 +46,27 @@
                             </select>
                           </div>
 
+
+
                           <div class="form-group col-md-6 select_sm">
-                            <label>Award Type</label>
-                            <select class="form-control select2" name="award_type" id="award_type" data-placeholder="Award Type">
-                              <option value=""> Award Type</option>
-                            </select>
+                            <label>Start Date</label>
+                            <input type="text" class="form-control form-control-sm" name="s_date" id="s_date"  placeholder="Start Date" required>
                           </div>
 
                           <div class="form-group col-md-6 select_sm">
-                            <label>Date</label>
-                            <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Date" required>
+                            <label>End Date</label>
+                            <input type="text" class="form-control form-control-sm" name="e_date" id="e_date"  placeholder="End Date" required>
                           </div>
 
 
                           <div class="form-group col-md-6 select_sm">
-                            <label>Gift</label>
-                            <input type="text" class="form-control form-control-sm" name="gift" id="gift"  placeholder="Gift" required>
+                            <label>Purpose To Visit</label>
+                            <input type="text" class="form-control form-control-sm" name="visit_purpose" id="visit_purpose"  placeholder="Purpose To Visit" required>
                           </div>
 
                           <div class="form-group col-md-6 select_sm">
-                            <label>Cash</label>
-                            <input type="text" class="form-control form-control-sm" name="cash" id="cash"  placeholder="Cash" required>
+                            <label>Place Of Visit</label>
+                            <input type="text" class="form-control form-control-sm" name="visit_place" id="visit_place"  placeholder="Place Of Visit" required>
                           </div>
 
                         </div>
@@ -79,23 +79,34 @@
                             <textarea class="form-control" name="name" rows="4" cols="85"></textarea>
                             </div>
 
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Month & Year</label>
-                              <input type="text" class="form-control form-control-sm" name="month_year" id="month_year"  placeholder="Month & Year" required>
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Expected Budget</label>
+                              <input type="text" class="form-control form-control-sm" name="exp_budget" id="exp_budget"  placeholder="Expected Budget" required>
                             </div>
 
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Award Photo</label>
-                              <input type="file" name="" value="">
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Actual Budget</label>
+                              <input type="text" class="form-control form-control-sm" name="act_budget" id="act_budget"  placeholder="Actual Budget" required>
                             </div>
+
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Travel Mode</label>
+                              <select class="form-control select2" name="travel_mode" id="travel_mode" data-placeholder="Travel Mode">
+                                <option value="">Travel Mode</option>
+                              </select>
+                              </div>
+
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Arrengment Type</label>
+                              <select class="form-control select2" name="arrengment_type" id="arrengment_type" data-placeholder="Arrengment Type">
+                                <option value="">Arrengment Type</option>
+                              </select>
+                              </div>
 
                         </div>
                       </div>
 
-                      <div class="form-group col-md-12 select_sm">
-                        <label>Award Information</label>
-                        <textarea class="form-control" name="award_info" rows="4" cols="85"></textarea>
-                        </div>
+
 
                     </div>
                     <div class="card-footer clearfix" style="display: block;">
@@ -117,11 +128,13 @@
                   <thead>
                   <tr>
                     <th class="wt_50">Action</th>
-                    <th>Award Name</th>
-                    <th>Name</th>
+
+                    <th>Employee</th>
                     <th>Company</th>
-                    <th>Gift</th>
-                    <th>Month & Year</th>
+                    <th>Palce of Visit </th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+
                   </tr>
                   </thead>
                   <tbody>
@@ -136,7 +149,8 @@
                       <td>asd</td>
                       <td>asd</td>
                       <td>asd</td>
-                      <td>asd</td>                    
+                      <td>asd</td>
+                    
                     </tr>
                   </tbody>
                 </table>

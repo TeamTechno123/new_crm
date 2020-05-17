@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Awards</h4>
+            <h4>Warning</h4>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
           <div class="col-md-12">
             <div class="card collapsed-card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">Add New Award</h3>
+                <h3 class="card-title">Add New Warning</h3>
                 <div class="card-tools">
                   <button type="button" class="btn btn-sm btn-primary" data-card-widget="collapse">Add New</button>
                 </div>
@@ -40,33 +40,22 @@
                           </div>
 
                           <div class="form-group col-md-12 select_sm">
-                            <label>Employee</label>
+                            <label>Warning To</label>
                             <select class="form-control select2" name="employee" id="employee" data-placeholder="Choose an Employee">
                               <option value="">Choose an Employee</option>
                             </select>
                           </div>
 
+
+
                           <div class="form-group col-md-6 select_sm">
-                            <label>Award Type</label>
-                            <select class="form-control select2" name="award_type" id="award_type" data-placeholder="Award Type">
-                              <option value=""> Award Type</option>
-                            </select>
+                            <label>Warning Type</label>
+                            <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Warning Type" required>
                           </div>
 
                           <div class="form-group col-md-6 select_sm">
-                            <label>Date</label>
-                            <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Date" required>
-                          </div>
-
-
-                          <div class="form-group col-md-6 select_sm">
-                            <label>Gift</label>
-                            <input type="text" class="form-control form-control-sm" name="gift" id="gift"  placeholder="Gift" required>
-                          </div>
-
-                          <div class="form-group col-md-6 select_sm">
-                            <label>Cash</label>
-                            <input type="text" class="form-control form-control-sm" name="cash" id="cash"  placeholder="Cash" required>
+                            <label>Subject</label>
+                            <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Subject" required>
                           </div>
 
                         </div>
@@ -79,22 +68,26 @@
                             <textarea class="form-control" name="name" rows="4" cols="85"></textarea>
                             </div>
 
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Month & Year</label>
-                              <input type="text" class="form-control form-control-sm" name="month_year" id="month_year"  placeholder="Month & Year" required>
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Warning By</label>
+                              <input type="text" class="form-control form-control-sm" name="month_year" id="month_year"  placeholder="Warning By" required>
                             </div>
 
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Award Photo</label>
-                              <input type="file" name="" value="">
+                            <div class="form-group col-md-6 select_sm">
+                              <label>Warning Subject</label>
+                              <input type="text" class="form-control form-control-sm" name="warining_subject" id="warining_subject"  placeholder="Warning Subject" required>
                             </div>
+
+
 
                         </div>
                       </div>
 
                       <div class="form-group col-md-12 select_sm">
-                        <label>Award Information</label>
-                        <textarea class="form-control" name="award_info" rows="4" cols="85"></textarea>
+                        <div class="form-group col-md-12 select_sm">
+                          <label>Attachment</label>
+                          <input type="file" name="" value="">
+                        </div>
                         </div>
 
                     </div>
@@ -117,11 +110,11 @@
                   <thead>
                   <tr>
                     <th class="wt_50">Action</th>
-                    <th>Award Name</th>
-                    <th>Name</th>
+                    <th>Employee</th>
                     <th>Company</th>
-                    <th>Gift</th>
-                    <th>Month & Year</th>
+                    <th>Warning Date</th>
+                    <th>Subject</th>
+                    <th>Warning By</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -136,7 +129,7 @@
                       <td>asd</td>
                       <td>asd</td>
                       <td>asd</td>
-                      <td>asd</td>                    
+                      <td>asd</td>
                     </tr>
                   </tbody>
                 </table>

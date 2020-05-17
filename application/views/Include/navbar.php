@@ -164,6 +164,177 @@
           <a href="#" class="nav-link head">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
+              Profile
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Profile/bank_account" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Bank Account </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Profile/change_password" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Change Password</p>
+              </a>
+            </li>
+
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Assets
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Assets/assets_category" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Assets Category</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Assets/assets" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Assets</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Events And Meeting
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Events/events" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Events</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Events/meeting" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Meeting</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Training
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Training/trainers" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Trainers</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Training/training" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Training</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Training/training_type" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Training Type</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Organization
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/announcements" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Announcements</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/company" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Company</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/policies" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Policies</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/dapartments" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Departments</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/designations" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Designations</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/location" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Location</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Organization/documents" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Official Documents</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
               CORE HR
               <i class="right fas fa-angle-left"></i>
             </p>
@@ -175,6 +346,49 @@
                 <p>Awards</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/complaints" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Complaints</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/transfers" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Transfers</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/resignations" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Resignations</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/terminations" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Terminations</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/warning" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Warning</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/travels" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Travels</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>CoreHr/pramotions" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pramotions</p>
+              </a>
+            </li>
+
           </ul>
         </li>
 
