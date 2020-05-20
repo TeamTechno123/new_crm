@@ -227,7 +227,44 @@
                 <p>Ticket</p>
               </a>
             </li>
+          </ul>
+        </li>
 
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Project Management
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/task_category" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Task Category</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/task" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Task</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/tax_type" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Tax Type</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/time_log" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Time Logs</p>
+              </a>
+            </li>
 
           </ul>
         </li>
