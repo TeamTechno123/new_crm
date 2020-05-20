@@ -30,38 +30,43 @@
                 <div class="card-body p-0" style="display: none;">
                   <form class="input_form m-0" id="form_action" role="form" action="" method="post">
                     <div class="row px-3">
-                      <div class="form-group col-md-3 select_sm">
+                      <div class="form-group col-md-2 select_sm">
                         <label>Project </label>
                         <select class="form-control select2" name="project_id" id="project_id" data-placeholder="Project ">
                           <option value="">Project </option>
                         </select>
                       </div>
 
-                      <div class="form-group col-md-3 select_sm">
+                      <div class="form-group col-md-2 select_sm">
                         <label>Employee </label>
                         <select class="form-control select2" name="employee_id" id="employee_id" data-placeholder="Employee ">
                           <option value="">Employee </option>
                         </select>
                       </div>
 
-                      <div class="form-group col-md-3 select_sm">
-                        <label>Asset Name</label>
-                        <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Asset Name" required>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Start Time</label>
+                        <input type="text" class="form-control form-control-sm" name="s_time" id="s_time"  placeholder="Start Time" required>
                       </div>
 
-                      <div class="form-group col-md-3 select_sm">
-                        <label>Company Asset Code</label>
-                        <input type="text" class="form-control form-control-sm" name="date" id="date"  placeholder="Company Asset Code" required>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>End Time</label>
+                        <input type="text" class="form-control form-control-sm" name="e_time" id="e_time"  placeholder="End Time" required>
                       </div>
 
-                      <div class="form-group col-md-3 select_sm">
-                        <label>Is Working</label>
-                        <select class="form-control select2" name="working_condition" id="working_condition" data-placeholder="Is Working">
-                          <option value="">Is Working</option>
-                        </select>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Start date</label>
+                        <input type="text" class="form-control form-control-sm" name="s_date" id="s_date"  placeholder="Start date" required>
+                      </div>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>End Date</label>
+                        <input type="text" class="form-control form-control-sm" name="e_date" id="e_date"  placeholder="End Date" required>
                       </div>
 
-
+                      <div class="form-group col-md-12 select_sm">
+                        <label>Memo</label>
+                        <input type="text" class="form-control form-control-sm" name="memo" id="memo"  placeholder="Memo" required>
+                      </div>
 
                     </div>
                     <div class="card-footer clearfix" style="display: block;">

@@ -152,5 +152,149 @@ class Project_Mgmt extends CI_Controller{
     header('location:'.base_url().'Project_Mgmt/time_log');
   }
 
+  public function invoice_payment(){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice_payment');
+    $this->load->view('Include/footer');
+  }
+
+  // Edit/Update Education Level...
+  public function edit_invoice_payment($invoice_payment_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice_payment');
+    $this->load->view('Include/footer');
+  }
+
+  //Delete Education Level...
+  public function delete_invoice_payment($invoice_payment_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+    $this->User_Model->delete_info('invoice_payment_id', $invoice_payment_id, 'invoice_payment');
+    $this->session->set_flashdata('delete_success','success');
+    header('location:'.base_url().'Project_Mgmt/invoice_payment');
+  }
+
+  public function invoice_calender(){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice_calender');
+    $this->load->view('Include/footer');
+  }
+
+  // Edit/Update Education Level...
+  public function edit_invoice_calender($invoice_calender_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice_calender');
+    $this->load->view('Include/footer');
+  }
+
+  //Delete Education Level...
+  public function delete_invoice_calender($invoice_calender_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+    $this->User_Model->delete_info('invoice_calender_id', $invoice_calender_id, 'invoice_calender');
+    $this->session->set_flashdata('delete_success','success');
+    header('location:'.base_url().'Project_Mgmt/invoice_calender');
+  }
+
+  public function projects(){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/projects');
+    $this->load->view('Include/footer');
+  }
+
+  // Edit/Update Education Level...
+  public function edit_projects($projects_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/projects');
+    $this->load->view('Include/footer');
+  }
+
+  //Delete Education Level...
+  public function delete_projects($projects_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+    $this->User_Model->delete_info('projects_id', $projects_id, 'projects');
+    $this->session->set_flashdata('delete_success','success');
+    header('location:'.base_url().'Project_Mgmt/projects');
+  }
+
+  public function invoice(){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice');
+    $this->load->view('Include/footer');
+  }
+
+  // Edit/Update Education Level...
+  public function edit_invoice($invoice_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+
+    $this->load->view('Include/head');
+    $this->load->view('Include/navbar');
+    $this->load->view('Project_Mgmt/invoice');
+    $this->load->view('Include/footer');
+  }
+
+  //Delete Education Level...
+  public function delete_invoice($invoice_id){
+    $crm_user_id = $this->session->userdata('crm_user_id');
+    $crm_company_id = $this->session->userdata('crm_company_id');
+    $crm_role_id = $this->session->userdata('crm_role_id');
+    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
+    $this->User_Model->delete_info('invoice_id', $invoice_id, 'invoice');
+    $this->session->set_flashdata('delete_success','success');
+    header('location:'.base_url().'Project_Mgmt/invoice');
+  }
+
 }
 ?>

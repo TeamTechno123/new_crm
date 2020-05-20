@@ -234,6 +234,24 @@
           <a href="#" class="nav-link head">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
+              Finance
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/account_balance" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Account Balance</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
               Project Management
               <i class="right fas fa-angle-left"></i>
             </p>
@@ -263,6 +281,33 @@
               <a href="<?php echo base_url(); ?>Project_Mgmt/time_log" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Time Logs</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/invoice_payment" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Invoice Payment</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/invoice_calender" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Invoice Calender</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/projects" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Projects</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Project_Mgmt/invoice" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Invoice</p>
               </a>
             </li>
 
