@@ -216,6 +216,74 @@
           <a href="#" class="nav-link head">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
+              Ticket
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Ticket/ticket" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Ticket</p>
+              </a>
+            </li>
+
+
+          </ul>
+        </li>
+
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Staff
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Staff/employee" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Employee</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Staff/emp_last_login" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Employee Last Login</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Staff/employee_exit" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Employees Exit</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Staff/expired_document" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Expired Document</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Staff/privileges" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Role & Privileges</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
               Events And Meeting
               <i class="right fas fa-angle-left"></i>
             </p>
@@ -263,6 +331,71 @@
               <a href="<?php echo base_url(); ?>Training/training_type" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Training Type</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              Timesheet
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/date_attendance" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Date Wise Attendance</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/leave_status" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Leave Status</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/holiday" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Holiday</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/leave" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Leave</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/monthly_attendance" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Monthly Attendance</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/office_shift" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Office Shift</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/overtime_request" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Overtime Request</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Timesheet/calender" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Calender</p>
               </a>
             </li>
 

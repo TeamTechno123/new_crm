@@ -30,22 +30,22 @@
       </li>
 
       <li class="nav-item">
-        <a href="document_type" class="nav-link">
+        <a href="<?php echo base_url(); ?>Profile/social_network" class="nav-link">
           <i class="far fa-file-alt"></i> Social Networking
         </a>
       </li>
       <li class="nav-item">
-        <a href="award_type" class="nav-link">
+        <a href="<?php echo base_url(); ?>Profile/document" class="nav-link">
           <i class="fas fa-trophy"></i> Documents
         </a>
       </li>
       <li class="nav-item">
-        <a href="religion" class="nav-link">
+        <a href="<?php echo base_url(); ?>Profile/qualification" class="nav-link">
           <i class="far fa-trash-alt"></i> Qualification
         </a>
       </li>
       <li class="nav-item">
-        <a href="leave_type" class="nav-link">
+        <a href="<?php echo base_url(); ?>Profile/experience" class="nav-link">
           <i class="far fa-plane"></i> Work Experience
         </a>
       </li>
@@ -56,7 +56,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="termination_type" class="nav-link">
+        <a href="<?php echo base_url(); ?>Profile/shift" class="nav-link">
           <i class="far fa-warning"></i> Shift
         </a>
       </li>

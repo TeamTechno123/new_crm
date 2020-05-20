@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends CI_Controller{
+class Timesheet extends CI_Controller{
   public function __construct(){
     parent::__construct();
     date_default_timezone_set('Asia/Kolkata');
     // $this->load->model('Transaction_Model');
   }
 
-  public function change_password(){
+  public function date_attendance(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -16,12 +16,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/change_password');
+    $this->load->view('Timesheet/date_attendance');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_change_password($change_password_id){
+  public function edit_date_attendance($date_attendance_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -29,22 +29,22 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/change_password');
+    $this->load->view('Timesheet/date_attendance');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_change_password($change_password_id){
+  public function delete_date_attendance($date_attendance_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('change_password_id', $change_password_id, 'change_password');
+    $this->User_Model->delete_info('date_attendance_id', $date_attendance_id, 'date_attendance');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/change_password');
+    header('location:'.base_url().'Timesheet/date_attendance');
   }
 
-  public function bank_account(){
+  public function leave_status(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -52,12 +52,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/bank_account');
+    $this->load->view('Timesheet/leave_status');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_bank_account($bank_account_id){
+  public function edit_leave_status($leave_status_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -65,23 +65,23 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/bank_account');
+    $this->load->view('Timesheet/leave_status');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_bank_account($bank_account_id){
+  public function delete_leave_status($leave_status_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('bank_account_id', $bank_account_id, 'bank_account');
+    $this->User_Model->delete_info('leave_status_id', $leave_status_id, 'leave_status');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/bank_account');
+    header('location:'.base_url().'Timesheet/leave_status');
   }
 
 
-  public function basic_information(){
+  public function holiday(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -89,12 +89,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/basic_information');
+    $this->load->view('Timesheet/holiday');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_basic_information($basic_information_id){
+  public function edit_holiday($holiday_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -102,23 +102,22 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/basic_information');
+    $this->load->view('Timesheet/holiday');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_basic_information($basic_information_id){
+  public function delete_holiday($holiday_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('basic_information_id', $basic_information_id, 'basic_information');
+    $this->User_Model->delete_info('holiday_id', $holiday_id, 'holiday');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/basic_information');
+    header('location:'.base_url().'Timesheet/holiday');
   }
 
-
-  public function profile_picture(){
+  public function leave(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -126,12 +125,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/profile_pic');
+    $this->load->view('Timesheet/leave');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_profile_picture($profile_picture_id){
+  public function edit_leave($leave_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -139,23 +138,23 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/profile_pic');
+    $this->load->view('Timesheet/leave');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_profile_picture($profile_picture_id){
+  public function delete_leave($leave_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('profile_picture_id', $profile_picture_id, 'profile_picture');
+    $this->User_Model->delete_info('leave_id', $leave_id, 'leave');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/profile_pic');
+    header('location:'.base_url().'Timesheet/leave');
   }
 
 
-  public function immigration(){
+  public function monthly_attendance(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -163,12 +162,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/immigration');
+    $this->load->view('Timesheet/monthly_attendance');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_immigration($immigration_id){
+  public function edit_monthly_attendance($monthly_attendance_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -176,24 +175,22 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/immigration');
+    $this->load->view('Timesheet/monthly_attendance');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_immigration($immigration_id){
+  public function delete_monthly_attendance($monthly_attendance_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('immigration_id', $immigration_id, 'immigration');
+    $this->User_Model->delete_info('monthly_attendance_id', $monthly_attendance_id, 'monthly_attendance');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/immigration');
+    header('location:'.base_url().'Timesheet/monthly_attendance');
   }
 
-
-
-  public function contact(){
+  public function office_shift(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -201,12 +198,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/contact');
+    $this->load->view('Timesheet/office_shift');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_contact($contact_id){
+  public function edit_office_shift($office_shift_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -214,24 +211,24 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/contact');
+    $this->load->view('Timesheet/office_shift');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_contact($contact_id){
+  public function delete_office_shift($office_shift_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('contact_id', $contact_id, 'contact');
+    $this->User_Model->delete_info('office_shift_id', $office_shift_id, 'office_shift');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/contact');
+    header('location:'.base_url().'Timesheet/office_shift');
   }
 
 
 
-  public function social_network(){
+  public function overtime_request(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -239,12 +236,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/social_network');
+    $this->load->view('Timesheet/overtime_request');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_social_network($social_network_id){
+  public function edit_overtime_request($overtime_request_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -252,24 +249,23 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/social_network');
+    $this->load->view('Timesheet/overtime_request');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_social_network($social_network_id){
+  public function delete_overtime_request($overtime_request_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('social_network_id', $social_network_id, 'social_network');
+    $this->User_Model->delete_info('overtime_request_id', $overtime_request_id, 'overtime_request');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/social_network');
+    header('location:'.base_url().'Timesheet/overtime_request');
   }
 
 
-
-  public function document(){
+  public function calender(){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -277,12 +273,12 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/document');
+    $this->load->view('Timesheet/calender');
     $this->load->view('Include/footer');
   }
 
   // Edit/Update Education Level...
-  public function edit_document($document_id){
+  public function edit_calender($calender_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
@@ -290,136 +286,20 @@ class Profile extends CI_Controller{
 
     $this->load->view('Include/head');
     $this->load->view('Include/navbar');
-    $this->load->view('Profile/document');
+    $this->load->view('Timesheet/calender');
     $this->load->view('Include/footer');
   }
 
   //Delete Education Level...
-  public function delete_document($document_id){
+  public function delete_calender($calender_id){
     $crm_user_id = $this->session->userdata('crm_user_id');
     $crm_company_id = $this->session->userdata('crm_company_id');
     $crm_role_id = $this->session->userdata('crm_role_id');
     if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('document_id', $document_id, 'document');
+    $this->User_Model->delete_info('calender_id', $calender_id, 'calender');
     $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/document');
+    header('location:'.base_url().'Timesheet/calender');
   }
-
-
-  public function qualification(){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/qualification');
-    $this->load->view('Include/footer');
-  }
-
-  // Edit/Update Education Level...
-  public function edit_qualification($qualification_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/qualification');
-    $this->load->view('Include/footer');
-  }
-
-  //Delete Education Level...
-  public function delete_qualification($qualification_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('qualification_id', $qualification_id, 'qualification');
-    $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/qualification');
-  }
-
-
-
-  public function experience(){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/experience');
-    $this->load->view('Include/footer');
-  }
-
-  // Edit/Update Education Level...
-  public function edit_experience($experience_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/experience');
-    $this->load->view('Include/footer');
-  }
-
-  //Delete Education Level...
-  public function delete_experience($experience_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('experience_id', $experience_id, 'experience');
-    $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/experience');
-  }
-
-
-
-
-  public function shift(){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/shift');
-    $this->load->view('Include/footer');
-  }
-
-  // Edit/Update Education Level...
-  public function edit_shift($shift_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-
-    $this->load->view('Include/head');
-    $this->load->view('Include/navbar');
-    $this->load->view('Profile/shift');
-    $this->load->view('Include/footer');
-  }
-
-  //Delete Education Level...
-  public function delete_shift($shift_id){
-    $crm_user_id = $this->session->userdata('crm_user_id');
-    $crm_company_id = $this->session->userdata('crm_company_id');
-    $crm_role_id = $this->session->userdata('crm_role_id');
-    if($crm_user_id == '' && $crm_company_id == ''){ header('location:'.base_url().'User'); }
-    $this->User_Model->delete_info('shift_id', $shift_id, 'shift');
-    $this->session->set_flashdata('delete_success','success');
-    header('location:'.base_url().'Profile/shift');
-  }
-
-
 
 
 }
