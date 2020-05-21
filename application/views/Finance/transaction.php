@@ -17,7 +17,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Account Balance</h4>
+            <h4>View Transaction</h4>
           </div>
         </div>
       </div>
@@ -27,6 +27,7 @@
       <div class="container-fluid">
         <div class="row">
 
+
           <div class="col-md-12">
 
             <!-- Education Level -->
@@ -35,24 +36,31 @@
               <div class="col-md-12">
                 <div class="card card-default">
                   <div class="card-header">
-                    <h5 class="card-title f-16">List All Account Balance</h5>
+                    <h5 class="card-title f-16">List All Transaction</h5>
                   </div>
                   <div class="card-body pt-0">
 
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="example2" class="table table-striped">
                       <thead>
                       <tr>
                         <th style="display:none;">#</th>
+                        <th>Date</th>
                         <th>Account</th>
-                        <th>Balance</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Reference</th>
                         <th class="wt_50">Action</th>
                       </tr>
                       </thead>
                       <tbody>
+
                           <tr>
                             <td style="display:none;"></td>
                             <td>asdf</td>
                             <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                           <td>asdf</td>
                             <td>
                               <div class="btn-group">
                                 <a href="<?php echo base_url(); ?>Master/edit_education_level/" class="btn btn-sm btn-default"><i class="fa fa-edit text-primary"></i></a>
@@ -60,6 +68,7 @@
                               </div>
                             </td>
                           </tr>
+
                       </tbody>
                     </table>
                   </div>

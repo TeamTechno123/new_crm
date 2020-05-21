@@ -17,7 +17,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Account Balance</h4>
+            <h4>Payslip Report</h4>
           </div>
         </div>
       </div>
@@ -26,6 +26,53 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-12">
+            <div class="card collapsed-card">
+              <div class="card-header border-transparent">
+                <h3 class="card-title">Filter</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-sm btn-primary" data-card-widget="collapse">Hide / Show </button>
+                </div>
+              </div>
+              <!--  -->
+                <div class="card-body p-0" style="display: none;">
+                  <form class="input_form m-0" id="form_action" role="form" action="" method="post">
+                    <div class="row px-3">
+                      <div class="col-md-10">
+                        <div class="row">
+                          <div class="form-group col-md-4 select_sm">
+                            <label>Company</label>
+                            <select class="form-control select2" name="company_id" id="company_id" data-placeholder=" Company">
+                              <option value=""> Company</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group col-md-4 select_sm">
+                            <label>Employee</label>
+                            <select class="form-control select2" name="employee_id" id="employee_id" data-placeholder=" Employee">
+                              <option value=""> Employee</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group col-md-4">
+                            <label>Month & Year</label>
+                            <input type="text" class="form-control form-control-sm" name="month_year" id="month_year" value="" placeholder="Month & Year" required>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div class="form-group col-md-2 text-right mt-4">
+                          <button id="btn_save" type="submit" class="btn btn-sm btn-primary px-4">Get</button>
+                        </div>
+                      </div>
+                      </div>
+
+                  </form>
+                </div>
+            </div>
+          </div>
 
           <div class="col-md-12">
 
@@ -35,22 +82,32 @@
               <div class="col-md-12">
                 <div class="card card-default">
                   <div class="card-header">
-                    <h5 class="card-title f-16">List All Account Balance</h5>
+                    <h5 class="card-title f-16">List All Payslip Report</h5>
                   </div>
                   <div class="card-body pt-0">
 
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="example2" class="table table-striped">
                       <thead>
                       <tr>
                         <th style="display:none;">#</th>
-                        <th>Account</th>
-                        <th>Balance</th>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Paid Amount</th>
+                        <th>Payment Month</th>
+                        <th>Payment Date</th>
+                        <th>Payslip Type</th>
+
                         <th class="wt_50">Action</th>
                       </tr>
                       </thead>
                       <tbody>
+
                           <tr>
                             <td style="display:none;"></td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
                             <td>asdf</td>
                             <td>asdf</td>
                             <td>
@@ -60,6 +117,7 @@
                               </div>
                             </td>
                           </tr>
+
                       </tbody>
                     </table>
                   </div>

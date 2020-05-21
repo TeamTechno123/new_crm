@@ -234,6 +234,191 @@
           <a href="#" class="nav-link head">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
+              Payment Gateway
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Payment_Gateway/payment_gateway" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Payment Gateway</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+            Quote Management
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/time_log" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Time log</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/estimates" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Estimates</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/projects" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Quoted Projects</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/clients" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Clients</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/leads" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Leads</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/estimate" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Estimate</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Quote/calender" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Estimate Calender</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              HR Report
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/account_statement" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Account Statement</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/attendance" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Attendance Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/employees_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Employees Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/expense_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Expense Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/income_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Income Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/project_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Project Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/training_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Training Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/transfer_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Transfer Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/user_role_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>User Roles Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/payslip_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Payslip Report</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>HR_Report/task_report" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Task Report</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+              File Manager
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>File_Manager/all_documents" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>All Documents</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
               Finance
               <i class="right fas fa-angle-left"></i>
             </p>
@@ -245,6 +430,60 @@
                 <p>Account Balance</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/account" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Account </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/expense" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Expense </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/deposit" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Deposit </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/transfer" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Transfer </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/payee" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Payees </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/payer" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>payers </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/payslip" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Payslip History </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Finance/transaction" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>View Transaction </p>
+              </a>
+            </li>
+
           </ul>
         </li>
 

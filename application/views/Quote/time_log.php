@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Employee Exit</h4>
+            <h4>Time Log</h4>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
           <div class="col-md-12">
             <div class="card collapsed-card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">Add New Employee Exit</h3>
+                <h3 class="card-title">Add New Time Log</h3>
                 <div class="card-tools">
                   <button type="button" class="btn btn-sm btn-primary" data-card-widget="collapse">Add New</button>
                 </div>
@@ -30,58 +30,43 @@
                 <div class="card-body p-0" style="display: none;">
                   <form class="input_form m-0" id="form_action" role="form" action="" method="post">
                     <div class="row px-3">
-                      <div class="form-group col-md-6 select_sm">
-                        <div class="row">
-                          <div class="form-group col-md-12 select_sm">
-                            <label>Company</label>
-                            <select class="form-control select2" name="company" id="company" data-placeholder="Company">
-                              <option value="">Company</option>
-                            </select>
-                          </div>
-
-                          <div class="form-group col-md-12 select_sm">
-                            <label>Employee</label>
-                            <select class="form-control select2" name="employee" id="employee" data-placeholder="Choose an Employee">
-                              <option value="">Choose an Employee</option>
-                            </select>
-                          </div>
-
-                          <div class="form-group col-md-6 select_sm">
-                            <label>Exit Date</label>
-                            <input type="text" class="form-control form-control-sm" name="exit_date" id="exit_date"  placeholder="Exit Date" required>
-                          </div>
-
-                          <div class="form-group col-md-12 select_sm">
-                            <label>Exit Type</label>
-                            <select class="form-control select2" name="employee" id="employee" data-placeholder="Exit Type">
-                              <option value="">Exit Type</option>
-                            </select>
-                          </div>
-                        </div>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Quoted Projects</label>
+                        <select class="form-control select2" name="quoted_projects" id="quoted_projects" data-placeholder="Quoted Projects">
+                          <option value="">Quoted Projects</option>
+                        </select>
                       </div>
 
-                      <div class="form-group col-md-6 select_sm">
-                        <div class="row">
-                          <div class="form-group col-md-12 select_sm">
-                            <label>Discription</label>
-                            <textarea class="form-control" name="name" rows="4" cols="85"></textarea>
-                            </div>
-
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Exit Interview</label>
-                              <select class="form-control select2" name="exit_intervew" id="exit_intervew" data-placeholder="Exit Interview">
-                                <option value="">Exit Interview</option>
-                              </select>
-                            </div>
-
-                            <div class="form-group col-md-12 select_sm">
-                              <label>Disable Account</label>
-                              <select class="form-control select2" name="disable_account" id="disable_account" data-placeholder="Disable Account">
-                                <option value="">Disable Account</option>
-                              </select>
-                            </div>
-                        </div>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Employee</label>
+                        <select class="form-control select2" name="employee_id" id="employee_id" data-placeholder="Employee">
+                          <option value="">Employee</option>
+                        </select>
                       </div>
+
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Start Time</label>
+                        <input type="text" class="form-control form-control-sm" name="s_time" id="s_time"  placeholder="Start Time" required>
+                      </div>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>End Time</label>
+                        <input type="text" class="form-control form-control-sm" name="e_time" id="e_time"  placeholder="End Time" required>
+                      </div>
+
+                      <div class="form-group col-md-2 select_sm">
+                        <label>Start Date</label>
+                        <input type="text" class="form-control form-control-sm" name="s_date" id="s_date"  placeholder="Start Date" required>
+                      </div>
+                      <div class="form-group col-md-2 select_sm">
+                        <label>End Date</label>
+                        <input type="text" class="form-control form-control-sm" name="e_time" id="e_time"  placeholder="End Date" required>
+                      </div>
+
+                      <div class="form-group col-md-12 select_sm">
+                        <label>Memo</label>
+                        <input type="text" class="form-control form-control-sm" name="memo" id="memo"  placeholder="Memo" required>
+                      </div>
+
                     </div>
                     <div class="card-footer clearfix" style="display: block;">
                       <button class="btn btn-sm btn-primary float-right px-3">Save</button>
@@ -95,18 +80,19 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">List All Employee Exit</h3>
+                <h3 class="card-title">List All Time Log</h3>
               </div>
               <div class="card-body p-2">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
                     <th class="wt_50">Action</th>
+                    <th>Project</th>
                     <th>Employee</th>
-                    <th>Company</th>
-                    <th>Exit Type</th>
-                    <th>Exit date</th>
-                    <th>Exit Interview</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Total Hours </th>
+                    <th>Memo</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -117,6 +103,7 @@
                           <button type="button" class="btn btn-sm btn-default" onclick="return confirm('Delete this Party');"><i class="fa fa-trash text-danger"></i></button>
                         </div>
                       </td>
+                      <td>asd</td>
                       <td>asd</td>
                       <td>asd</td>
                       <td>asd</td>

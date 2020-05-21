@@ -17,7 +17,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Account Balance</h4>
+            <h4>Project Report</h4>
           </div>
         </div>
       </div>
@@ -26,6 +26,50 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-12">
+            <div class="card collapsed-card">
+              <div class="card-header border-transparent">
+                <h3 class="card-title">Filter</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-sm btn-primary" data-card-widget="collapse">Hide / Show </button>
+                </div>
+              </div>
+              <!--  -->
+                <div class="card-body p-0" style="display: none;">
+                  <form class="input_form m-0" id="form_action" role="form" action="" method="post">
+                    <div class="row px-3">
+                      <div class="col-md-10">
+                        <div class="row">
+                          <div class="form-group col-md-6 select_sm">
+                            <label>Project</label>
+                            <select class="form-control select2" name="project_id" id="project_id" data-placeholder="All Project">
+                              <option value="">All Project</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6 select_sm">
+                            <label>Status</label>
+                            <select class="form-control select2" name="status" id="status" data-placeholder=" Select Status">
+                              <option value=""> Select Status</option>
+                            </select>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div class="form-group col-md-2 text-right mt-4">
+                          <button id="btn_save" type="submit" class="btn btn-sm btn-primary px-4">Get</button>
+                        </div>
+                      </div>
+
+
+
+                      </div>
+
+                  </form>
+                </div>
+            </div>
+          </div>
 
           <div class="col-md-12">
 
@@ -35,22 +79,37 @@
               <div class="col-md-12">
                 <div class="card card-default">
                   <div class="card-header">
-                    <h5 class="card-title f-16">List All Account Balance</h5>
+                    <h5 class="card-title f-16">List All Project Report</h5>
                   </div>
                   <div class="card-body pt-0">
 
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="example2" class="table table-striped">
                       <thead>
                       <tr>
                         <th style="display:none;">#</th>
-                        <th>Account</th>
-                        <th>Balance</th>
+                        <th>Project Title</th>
+                        <th>Priority</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status </th>
+                        <th>Progress</th>
+                        <th>Project Members</th>
+                        <th>Budget Hours</th>
+                        <th>Actual Hours</th>
                         <th class="wt_50">Action</th>
                       </tr>
                       </thead>
                       <tbody>
+
                           <tr>
                             <td style="display:none;"></td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
+                            <td>asdf</td>
                             <td>asdf</td>
                             <td>asdf</td>
                             <td>
@@ -60,6 +119,7 @@
                               </div>
                             </td>
                           </tr>
+
                       </tbody>
                     </table>
                   </div>

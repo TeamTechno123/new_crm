@@ -111,7 +111,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">List All Custom Fields</h3>
+                <h3 class="card-title">List All Assets</h3>
               </div>
               <div class="card-body p-2">
                 <table id="example1" class="table table-bordered table-striped">

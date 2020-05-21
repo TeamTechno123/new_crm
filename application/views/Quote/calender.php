@@ -17,7 +17,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12 text-left mt-2">
-            <h4>Account Balance</h4>
+            <h4>Estimate Calender</h4>
           </div>
         </div>
       </div>
@@ -31,37 +31,36 @@
 
             <!-- Education Level -->
             <div class="row">
-
-              <div class="col-md-12">
+              <div class="col-md-5">
                 <div class="card card-default">
                   <div class="card-header">
-                    <h5 class="card-title f-16">List All Account Balance</h5>
+                    <h5 class="card-title f-16"> Add New Estimate Calender</h5>
+                  </div>
+                  <form class="m-0 input_form" id="form_action" role="form" action="" method="post">
+                    <div class="card-body row">
+                      <div class="form-group col-md-12">
+                        <label>Set Date</label>
+                        <input type="text" class="form-control form-control-sm" name="set_date" id="set_date" value="" placeholder="Set Date" required>
+                      </div>
+                      <div class="form-group col-md-12 text-right m-0">
+
+                          <button id="btn_save" type="submit" class="btn btn-sm btn-primary px-4">Update</button>
+
+                          <button id="btn_save" type="submit" class="btn btn-sm btn-success px-4">Save</button>
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h5 class="card-title f-16">List All Estimate Calender</h5>
                   </div>
                   <div class="card-body pt-0">
+                    <h4>Estimate Calender</h4>
 
-                    <table id="example1" class="table table-bordered table-striped">
-                      <thead>
-                      <tr>
-                        <th style="display:none;">#</th>
-                        <th>Account</th>
-                        <th>Balance</th>
-                        <th class="wt_50">Action</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                            <td style="display:none;"></td>
-                            <td>asdf</td>
-                            <td>asdf</td>
-                            <td>
-                              <div class="btn-group">
-                                <a href="<?php echo base_url(); ?>Master/edit_education_level/" class="btn btn-sm btn-default"><i class="fa fa-edit text-primary"></i></a>
-                                <a href="<?php echo base_url(); ?>Master/delete_education_level/" class="btn btn-sm btn-default" onclick="return confirm('Delete this Education Level');" ><i class="fa fa-trash text-danger"></i></a>
-                              </div>
-                            </td>
-                          </tr>
-                      </tbody>
-                    </table>
                   </div>
                 </div>
               </div>
