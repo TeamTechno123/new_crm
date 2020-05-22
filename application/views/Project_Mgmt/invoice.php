@@ -195,4 +195,8 @@
     '</tr>';
     $('#myTable').append(row);
   });
+
+  $('#myTable').on('click', '.rem_row', function () {
+   $(this).closest('tr').remove();
+ });
   </script>

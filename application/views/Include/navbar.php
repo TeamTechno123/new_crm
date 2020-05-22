@@ -50,7 +50,7 @@
         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
         <li class="nav-item">
           <a href="<?php echo base_url(); ?>User/dashboard" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
+            <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
             </p>
@@ -59,7 +59,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-th"></i>
             <p>
               Company
               <i class="right fas fa-angle-left"></i>
@@ -125,7 +125,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-tree"></i>
             <p>
               Master
               <i class="right fas fa-angle-left"></i>
@@ -162,7 +162,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-book"></i>
             <p>
               Profile
               <i class="right fas fa-angle-left"></i>
@@ -189,7 +189,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon far fa-plus-square"></i>
             <p>
               Assets
               <i class="right fas fa-angle-left"></i>
@@ -214,7 +214,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-file"></i>
             <p>
               Ticket
               <i class="right fas fa-angle-left"></i>
@@ -250,7 +250,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-copy"></i>
             <p>
             Quote Management
               <i class="right fas fa-angle-left"></i>
@@ -310,7 +310,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon far fa-envelope"></i>
             <p>
               HR Report
               <i class="right fas fa-angle-left"></i>
@@ -399,7 +399,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-file"></i>
             <p>
               File Manager
               <i class="right fas fa-angle-left"></i>
@@ -417,7 +417,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-copy"></i>
             <p>
               Finance
               <i class="right fas fa-angle-left"></i>
@@ -489,7 +489,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-edit"></i>
             <p>
               Project Management
               <i class="right fas fa-angle-left"></i>
@@ -556,7 +556,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon far fa-plus-square"></i>
             <p>
               Staff
               <i class="right fas fa-angle-left"></i>
@@ -603,7 +603,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-tree"></i>
             <p>
               Events And Meeting
               <i class="right fas fa-angle-left"></i>
@@ -628,7 +628,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-circle"></i>
             <p>
               Training
               <i class="right fas fa-angle-left"></i>
@@ -660,7 +660,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon far fa-calendar-alt"></i>
             <p>
               Timesheet
               <i class="right fas fa-angle-left"></i>
@@ -727,7 +727,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-tree"></i>
             <p>
               Organization
               <i class="right fas fa-angle-left"></i>
@@ -787,7 +787,7 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               CORE HR
               <i class="right fas fa-angle-left"></i>
