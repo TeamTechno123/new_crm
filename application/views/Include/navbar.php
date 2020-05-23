@@ -232,6 +232,65 @@
 
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link head">
+            <i class="nav-icon far fa-circle text-info"></i>
+            <p>
+              Payroll
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Payroll/payslip" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Payslip</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <p>
+              Performance
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview" style="display: none;">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Performance/goal_tracking" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Goal Tracking</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Performance/goal_type" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Goal Type</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Performance/performance_appraisal" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Performance Appraisal</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>Performance/performance_indicator" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Performance Indicator</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link head">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
               Payment Gateway
